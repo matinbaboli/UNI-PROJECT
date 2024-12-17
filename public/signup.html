@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : authentication</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+<body>
+    <div class="page-content">
+        <div class="form-container">
+            <h1 class="form-title">
+                sign up
+            </h1>
+            <p>Already have an account?<a href="/login.html" class="link">log-in</a></p>
+            <form id="signup-form" action="">
+                <div>
+                    <label for="email" class="input-label">Email:</label>
+                    <input type="email" id="email" class="text-input">
+                </div>
+                <div>
+                    <label for="password" class="input-label">Password:</label>
+                    <input type="password" id="password" class="text-input">
+                </div>
+                <div>
+                    <label for="repeat-password" class="input-label">Repeat Password:</label>
+                    <input type="password" id="repeat-password" class="text-input">
+                </div>
+                <button id="signup-btn" class="btn dark">sign up</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+</html>

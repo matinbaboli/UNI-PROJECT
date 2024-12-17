@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    padding-inline: 20px;
+    margin-top: 100px;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    box-sizing: border-box;
+    height: 550px;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    background: #1b1b1b;
+    padding-block: 20px;
+}
+
+.posts-list ul {
+    overflow: auto;
+    height: 400px;
+}
+
+.add-post {
+    align-self: center;
+}
+
+.post {
+    display: flex;  
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-block: 1px solid #1b1b1b;
+    font-size: 1.1rem;
+    cursor: pointer;
+    overflow: hidden;
+    background: white;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.post:hover {
+    background: #1b1b1b;
+    color: white;
+}
+
+.post img {
+    width: 90px;
+    height: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translateX(-30px);
+    transition: transform 0.2s ease-in-out;
+    object-fit: cover;
+
+}
+.post:hover img {
+    transform: translateX(0px);
+}
+
+.admin-dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    color: #2d2d2d;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.selected-post-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.selected-post-text-container {
+    width: 100%;
+}
+
+
+.post-title {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-block: 10px;
+}
+
+.post-content {
+    color: #2d2d2d;
+    line-height: 25px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+.post-actions button {
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    /* body {
+        height: 100vh;
+    } */
+    .admin-dashboard {
+        /* display: flex; */
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+        /* gap: 80px; */
+        /* padding-inline: 100px; */
+        margin-top: 100px;
+    }
+    .posts-list {
+        min-width: 150px;
+        width: 30vw;
+    }
+    .admin-dashboard-content {
+        min-width: 250px;
+        width: 40vw;
+    }
+    
+    
+}

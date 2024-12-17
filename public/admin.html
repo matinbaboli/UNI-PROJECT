@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : dashboard</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li id="login-button-list-item" class="link-item">
+                <!-- <a href="/login.html" class="btn dark">log-in</a> -->
+            </li>
+            <!-- <li class="link-item"><a href="/editor" class="link">editor</a></li> -->
+        </ul>
+    </nav>
+
+    <section class="admin-dashboard">
+        <article class="posts-list">
+            <ul>
+                <li class="post">
+                    <img src="./img/img4.png" alt="post-image">
+                    <h3 class="post-title">title</h3>
+                </li>
+            </ul>
+            <a href="/editor.html" class="btn add-post">Add Post</a>
+        </article>
+        <article class="admin-dashboard-content">
+            <h1 class="heading dark"><span class="small">Manage your</span> <span class="no-fill dark">posts</span></h1>
+        </article>
+    </section>
+    <!-- <article class="posts-list">
+        <h2>You have no posts! write one</h2>
+        <a href="/editor.html" class="btn add-post">Add Post</a>
+    </article>
+    <article class="admin-dashboard-content">
+        <h1>Manage your posts here</h1>
+    </article> -->
+
+
+    <script src="js/loginButton.js"></script>
+    <script src="js/tokenCheck.js"></script>
+    <script src="js/admin.js"></script>
+
+
+
+</body>
+</html>
